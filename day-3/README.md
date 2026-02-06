@@ -135,3 +135,5 @@ Differentiating between On-Demand, Reserved, and Spot instances.
 ## Creation of EC2 Instances"
 - give name, select OS and it's version, select instance type - t2.micro, t3.micro,
 - create a key pair for password, n/w settings and select storage how much gb we want
+- To access the ec2 instance: go to the folder where the pem file downloaded, give execute ssh -i pem file server_name@pip
+- we can connect in the console also, by selecting connect button. 
