@@ -131,3 +131,7 @@ Differentiating between On-Demand, Reserved, and Spot instances.
 - Starting, stopping, and terminating instances.
 - Monitoring instance performance and utilization.
 - Basic troubleshooting and accessing instances using SSH (Secure Shell).
+
+## Creation of EC2 Instances"
+- give name, select OS and it's version, select instance type - t2.micro, t3.micro,
+- create a key pair for password, n/w settings and select storage how much gb we want
