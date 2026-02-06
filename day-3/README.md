@@ -1,5 +1,5 @@
 # What will you learn 
-
+Elastic means: we can scale up and scale down the resources.
 ## Introduction to EC2:
 
 What is EC2, and why is it important?
