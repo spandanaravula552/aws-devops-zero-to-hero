@@ -1,5 +1,5 @@
 # VPC
-
+VPC is a private cloud in AWS public cloud.
 Imagine you want to set up a private, secure, and isolated area in the cloud where you can run your applications and store your data. This is where a VPC comes into play.
 
 A VPC is a virtual network that you create in the cloud. It allows you to have your own private section of the internet, just like having your own network within a larger network. Within this VPC, you can create and manage various resources, such as servers, databases, and storage.
@@ -23,7 +23,7 @@ The following features help you configure a VPC to provide the connectivity that
 Virtual private clouds (VPC)
 
     A VPC is a virtual network that closely resembles a traditional network that you'd operate in your own data center. After you create a VPC, you can add subnets.
-Subnets
+Subnets. when we are creating vpc we have an option called "vpc and more" click on that which creates 2 pub & 2 pri subnets,internet gw, RT, and associate RT to vpc.
 
     A subnet is a range of IP addresses in your VPC. A subnet must reside in a single Availability Zone. After you add subnets, you can deploy AWS resources in your VPC.
 IP addressing
@@ -32,11 +32,11 @@ IP addressing
 
 Network Access Control List (NACL)
 
-    A Network Access Control List is a stateless firewall that controls inbound and outbound traffic at the subnet level. It operates at the IP address level and can allow or deny traffic based on rules that you define. NACLs provide an additional layer of network security for your VPC.
+    A Network Access Control List is a stateless firewall that controls inbound and outbound traffic at the subnet level. It operates at the IP address level and can allow or deny traffic based on rules that you define. NACLs provide an additional layer of network security for your VPC. NACL is the best for security because it applied at vpc each and every subnet level, if we have 100's of ec2 in subnet we can write security rules there only instead of creating rules for each ec2 instances. By default NACL allow all traffic from outside world.
    
 Security Group
 
-    A security group acts as a virtual firewall for instances (EC2 instances or other resources) within a VPC. It controls inbound and outbound traffic at the instance level. Security groups allow you to define rules that permit or restrict traffic based on protocols, ports, and IP addresses.  
+    A security group acts as a virtual firewall for instances (EC2 instances or other resources) within a VPC. It controls inbound and outbound traffic at the instance level. Security groups allow you to define rules that permit or restrict traffic based on protocols, ports, and IP addresses.  if we allow any traffic in sg and deny same traffic in NACL, it will not allow us to access the any app inside EC2, because NACL is the first defence or first entry point for vpc subnet.
 
 Routing
 
@@ -59,7 +59,9 @@ VPC Flow Logs
 VPN connections
 
     Connect your VPCs to your on-premises networks using AWS Virtual Private Network (AWS VPN).
+Default Security Group
 
+    when we created vpc, aws created default security group for vpc, it will creates rules those are allow o/b traffic, deny all i/b traffic, and aws will not allow port 25 for o/b traffic, because it is  a mailing service.
 
 ## Resources 
 
