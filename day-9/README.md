@@ -166,3 +166,9 @@ Ensure data consistency and durability by understanding S3's data replication an
 Recovering deleted objects
 
 If an object is accidentally deleted, you can often recover it using versioning or S3 event notifications. Additionally, consider enabling Cross-Region Replication (CRR) for disaster recovery scenarios.
+
+
+## Hosting static website in s3 bucket;
+
+Go to s3 bucket->properties->click on static website hosting->edit->enable it->we can add css, html and JS files->and save it.
+To access the website, we need to add bucket policies.and add JSON template.
