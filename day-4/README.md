@@ -1,5 +1,6 @@
 # VPC
 VPC is a private cloud in AWS public cloud.
+The traffic flow to reach any app in ec2 - Internet G/W->NACL->RT->Security group->EC2
 Imagine you want to set up a private, secure, and isolated area in the cloud where you can run your applications and store your data. This is where a VPC comes into play.
 
 A VPC is a virtual network that you create in the cloud. It allows you to have your own private section of the internet, just like having your own network within a larger network. Within this VPC, you can create and manage various resources, such as servers, databases, and storage.
