@@ -4,6 +4,9 @@
 
 What is Amazon S3?
 As a DE we can stores app log file, app confi files
+S3 bucket can access by anyone in the world/it can access globally.
+We can store 5TB of size in bucket
+
 Simple Storage Service is a scalable and secure cloud storage service provided by Amazon Web Services (AWS). It allows you to store and retrieve any amount of data from anywhere on the web.
 
 What are S3 buckets?
