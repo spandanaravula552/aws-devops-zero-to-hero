@@ -1,0 +1,20 @@
+#Code Pipeline:
+
+Code pipeline is CI service where we do code build, this is a managed service by aws.
+
+##Jenkins Advantages:
+
+open source tool for CI
+we can easily integrate with any cloud
+ 
+##Jenkins Disadvantages:
+but to manage docker slaves like scaling up them or scaling down and managing them it's difficult task.
+
+
+## Code Pipeline Advantages:
+when organizations wants everything have to be aws, then we can go for code pipeline.
+the ec2 insstances/agents can manage by aws cloud, we no need to worry about them.
+## Code Pipeline Disadvantages:
+  
+but we can't integrate other tools with code pipeline.
+if in future, org wants hybrid cloud setup, then we can't integrate code pipeline with another cloud.
